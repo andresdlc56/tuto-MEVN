@@ -21,7 +21,7 @@ const app = express();
 	app.use(express.json());
 
 //Rutas
-app.use('/tasks', require('./routes/tasks'));
+app.use('/api/tasks', require('./routes/tasks'));
 
 //Archivos Estaticos
 app.use(express.static (__dirname + '/public'));
